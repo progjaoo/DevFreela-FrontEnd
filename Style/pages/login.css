@@ -1,12 +1,11 @@
 .ld-login >.ld-wrapper{
     max-width: var(--ld-main-wrapper);
-    background-color: blue;
     margin: 0 auto;
 }
 .ld-login >.ld-wrapper >.ld-header{
     height: var(--ld-core-header);
     width: 100%;
-    background-color: green;
+    background: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
     position: fixed;
     left: 0;
@@ -16,17 +15,30 @@
 .ld-login >.ld-wrapper >.ld-header >.wrapper{
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
-    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
 }
 
+.ld-login >.ld-wrapper >.ld-header >.wrapper{
+    height: var(--ld-core-header);
+    padding: 16px 0;
+}
+
+.ld-login >.ld-wrapper >.ld-header >.wrapper >.image{
+    height: 100%;
+}
 .ld-login >.ld-wrapper >.main-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: var(--ld-core-header);
 }
 .ld-login >.ld-wrapper >.main-content >.left{
-    background-color: blue;
-
+    padding-top: 48px;
 }
 .ld-login >.ld-wrapper >.main-content >.right{
-    background-color: red;
+    overflow: hidden;
+    height: 100vh;
+}
+.ld-login >.ld-wrapper >.main-content >.right >.image{
+    height: 100%;
 }
