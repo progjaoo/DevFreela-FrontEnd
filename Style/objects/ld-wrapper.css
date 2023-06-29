@@ -1,0 +1,19 @@
+.ld-wrapper{
+    max-width: var(--ld-main-wrapper);
+    margin: 0 auto;
+}
+.ld-wrapper >.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: var(--ld-core-header);
+}
+.ld-wrapper >.main-content >.left{
+    padding-top: 48px;
+}
+.ld-wrapper >.main-content >.right{
+    overflow: hidden;
+    height: 100vh;
+}
+.ld-wrapper >.main-content >.right >.image{
+    height: 100%;
+}
