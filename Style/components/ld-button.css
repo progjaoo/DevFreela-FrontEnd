@@ -1,7 +1,7 @@
 .ld-button{
-    font-family: var(--font-family-base);
+    font-family: var(--ld-family-base);
     background-color: var(--ld-color-primary);
-    font-size: calc( var(--font-size-base) + 8px);
+    font-size: calc( var(--ld-size-base) + 8px);
     color: white;
     font-weight: 800;
     padding: 20px;

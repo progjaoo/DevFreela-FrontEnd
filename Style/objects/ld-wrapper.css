@@ -12,8 +12,14 @@
 }
 .ld-wrapper >.main-content >.right{
     overflow: hidden;
+    position: relative;
     height: 100vh;
 }
 .ld-wrapper >.main-content >.right >.image{
     height: 100%;
+    position: absolute;
+    min-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
