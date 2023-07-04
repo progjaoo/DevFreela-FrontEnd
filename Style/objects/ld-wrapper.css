@@ -7,6 +7,9 @@
     grid-template-columns: 1fr 1fr;
     padding-top: var(--ld-core-header);
 }
+.ld-wrapper >.main-content.-one-col{
+    grid-template-columns: 1fr;
+}
 .ld-wrapper >.main-content >.left{
     padding-top: 48px;
 }

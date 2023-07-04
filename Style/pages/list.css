@@ -1,0 +1,16 @@
+.ld-list >.ld-wrapper>.main-content>.title-button{
+    margin-top: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.ld-list >.ld-wrapper>.main-content>.title-button>.title{
+    font-size: calc(var(--ld-size-base) + 20px);
+    font-weight: 700;
+}
+.ld-list >.ld-wrapper>.main-content>.title-button>.button{
+
+}
+.ld-list >.ld-wrapper>.main-content>.table-wrapper{
+    margin-top: 32px;
+}

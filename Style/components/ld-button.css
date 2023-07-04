@@ -11,6 +11,12 @@
     cursor: pointer;
     transition: background-color 0.4s;
 }
+
+.ld-button.-small{
+    font-size: calc( var(--ld-size-base) + 4px);
+    font-weight: 600;
+    padding: 12px 27px;
+}
 .ld-button:hover{
     background-color: var(--ld-color-primary-light);
 }

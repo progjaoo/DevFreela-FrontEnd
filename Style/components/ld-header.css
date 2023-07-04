@@ -1,3 +1,4 @@
+/*Logo do DevFreela*/
 .ld-header{
     height: var(--ld-core-header);
     width: 100%;
@@ -12,7 +13,11 @@
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+}
+.ld-header >.wrapper.-has-user{
+    display: grid; /*has-use é um tipo usado na class HTML*/
+    grid-template-columns: 1fr 1fr auto;
 }
 .ld-header >.wrapper{
     height: var(--ld-core-header);
@@ -21,4 +26,37 @@
 }
 .ld-header >.wrapper >.image{
     height: 100%;
+}
+
+/*logo no header do usuario logado*/
+.ld-header >.wrapper >.user{
+    display: flex;
+    align-items: center;
+}   
+
+.ld-header >.wrapper >.user >.info{
+    text-align: right;
+}   
+.ld-header >.wrapper >.user >.info >.name{
+    display: block;
+    font-weight: 800;
+    font-size: calc(var(--ld-size-base) + 4px);
+}   
+.ld-header >.wrapper >.user >.info >.role{
+    display: block;
+    font-weight: 400;
+    font-size: calc(var(--ld-size-base) + 1px);
+    margin-top: 6px;
+}  
+.ld-header >.wrapper >.user >.photo-wrapper{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--ld-color-primary);
+    overflow: hidden;
+    margin-left: 12px;
+}
+.ld-header >.wrapper >.user  >.photo-wrapper >img{
+    height: 100%;
+    width: 100%;
 }
