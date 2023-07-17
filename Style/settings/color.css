@@ -6,6 +6,7 @@
     
     --ld-color-gray: #767684;
     --ld-color-gray-light: #888787;
+    --ld-color-gray-lightest: rgba(196, 196, 196, 0.144);
     --ld-color-gray-dark: #09090A;
     --ld-color-gray-lighter: #F9FBFB;
 }
