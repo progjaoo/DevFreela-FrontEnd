@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Tela</title>
+    <title>Create - Tela</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +33,12 @@
     <link rel="stylesheet" href="style/components/ld-header.css">
 
     <!--PAGE-->
-    <link rel="stylesheet" href="style/pages/create.css">
+    <link rel="stylesheet" href="style/pages/project-create-edit.css">
 
     <!-- TRUMPS -->
 
-
+    <!--SCRIPTS-->
+    <script src="scripts/project-create-edit.js"></script>
 </head>
 
 <body>
@@ -55,13 +56,14 @@
                     keyboard_arrow_left
                 </a>
                 <div class="left">
-                    <h1 class="main-title">
-                        Vamos cadastrar nossos projeto?
+                    <h1 class="main-title" id="main-title">
+
                     </h1>
                     <input class="ld-input" placeholder="Título">
                     <input class="ld-input" placeholder="Custo Total">
                     <textarea class="ld-input" placeholder="Descrição"></textarea>
-                    <button class="ld-button" href="/create.html">Continuar</button>
+
+                    <button class="ld-button" id="action-button"></button>
                 </div>
                 <div class="right">
                     <img class="image" src="assets/image/bg-float-cubes.png" alt="imagem-cubo-float">
