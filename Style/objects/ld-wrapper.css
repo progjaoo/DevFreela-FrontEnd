@@ -15,6 +15,9 @@
     color: var(--ld-color-gray-dark);
     text-decoration: none;
 }
+.ld-wrapper >.main-content >.ld-button.-small{
+    text-decoration: none;
+}
 .ld-wrapper >.main-content.-one-col{
     grid-template-columns: 1fr;
 }

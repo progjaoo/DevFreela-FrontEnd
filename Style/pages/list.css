@@ -8,8 +8,8 @@
     font-size: calc(var(--ld-size-base) + 20px);
     font-weight: 700;
 }
-.ld-list >.ld-wrapper>.main-content>.title-button>.button{
-    text-decoration: none;
+.ld-list >.ld-wrapper>.main-content>.title-button>.small{
+
 }
 .ld-list >.ld-wrapper>.main-content>.table-wrapper{
     margin-top: 32px;
