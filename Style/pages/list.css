@@ -9,7 +9,7 @@
     font-weight: 700;
 }
 .ld-list >.ld-wrapper>.main-content>.title-button>.button{
-
+    text-decoration: none;
 }
 .ld-list >.ld-wrapper>.main-content>.table-wrapper{
     margin-top: 32px;

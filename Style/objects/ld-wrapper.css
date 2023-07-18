@@ -3,9 +3,17 @@
     margin: 0 auto;
 }
 .ld-wrapper >.main-content{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: var(--ld-core-header);
+}
+.ld-wrapper >.main-content >.back-btn{
+    position: fixed;
+    font-size: calc(var(--ld-size-base) + 38px);
+    cursor: pointer;
+    color: var(--ld-color-gray-dark);
+    text-decoration: none;
 }
 .ld-wrapper >.main-content.-one-col{
     grid-template-columns: 1fr;
@@ -16,7 +24,7 @@
 .ld-wrapper >.main-content >.right{
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - var(--ld-core-header));
 }
 .ld-wrapper >.main-content >.right >.image{
     height: 100%;
