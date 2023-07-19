@@ -13,23 +13,31 @@ function checkIfAnyRoleIsChecked() {
 
 
 function cadastrar() {
-    //se entrar aqui, é pq ta válido!
+    //Checa se a role foi checked
     if (checkIfAnyRoleIsChecked() === false) {
-        alert("Marque se você é Dev ou Cliente!")
+        alert("Marque se você é Dev ou Cliente!");
+        return;
     }
 
-    //pegar os dados da API
-    let payload = {
+    //inicia a massa de dados
+    let payloadUsers = {
+        role: document.getElementsByName("role")[0].checked == true ? 'dev' : 'cliente',
         fullname: document.querySelector("#fullname").value,
         birthdate: document.querySelector("#birthdate").value,
         email: document.querySelector("#email").value,
         password: document.querySelector("#password").value
     }
 
-
-    //if (document.getElementsByName("role")[0].checked === false) {
-
-
-    //Enviar para API
-
+    // Enviando para a API utilizando MockAPI para testes...
+    fetch("https://64b7d58821b9aa6eb0791e15.mockapi.io/api/users", {
+        method: 'POST',
+        body: JSON.stringify(payloadUsers), //transformando o payload em string
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+        })
 }
