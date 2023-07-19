@@ -38,6 +38,12 @@ function cadastrar() {
     })
         .then(response => response.json())
         .then(response => {
-            console.log(response);
+
+            alert('Login realizado com sucesso');
+
+            localStorage.setItem("userName", response.fullname);
+            localStorage.setItem("role", response.role === 'dev' ? "Desenvolvedor" : "Cliente");
+
+            window.location.href = "list.html";
         })
 }

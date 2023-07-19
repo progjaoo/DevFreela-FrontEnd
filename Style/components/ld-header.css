@@ -49,14 +49,14 @@
     margin-top: 6px;
 }  
 .ld-header >.wrapper >.user >.photo-wrapper{
-    height: 32px;
+    height: 30px;
     width: 32px;
     border-radius: 50%;
-    border: 1px solid var(--ld-color-primary);
+    /*border: 1px solid var(--ld-color-primary);*/
     overflow: hidden;
     margin-left: 12px;
 }
-.ld-header >.wrapper >.user  >.photo-wrapper >img{
+.ld-header >.wrapper >.user  >.photo-wrapper >span{
     height: 100%;
     width: 100%;
 }
