@@ -29,6 +29,7 @@ function CriarOuEditar() {
             } else {
                 alert("Cadastrado com sucesso");
             }
+            window.location.href = "list.html";
 
         })
 }
