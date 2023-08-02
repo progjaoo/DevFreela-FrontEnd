@@ -36,7 +36,21 @@ function CriarOuEditar() {
 
 window.onload = function () {
     trocaDeTextoDaPage();
+    FillInputs();
 }
+
+function FillInputs() {
+    if (screenType == 'edit') {
+        fetch(`https://64b7d58821b9aa6eb0791e15.mockapi.io/api/projects/${params.id}`)
+            .then(response => response.json())
+            .then(project => {
+                document.querySelector('#title').value = project.title;
+                document.querySelector('#totalCost').value = project.totalCost;
+                document.querySelector('#description').value = project.description;
+            })
+    }
+}
+
 
 function trocaDeTextoDaPage() {
     if (screenType == 'create') {

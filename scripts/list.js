@@ -23,7 +23,7 @@ function GoToEdit(id) {
 }
 
 function DeleteProject(id) {
-    fetch(`https://622cd1e6087e0e041e147214.mockapi.io/api/projects/${id}`, {
+    fetch(`https://64b7d58821b9aa6eb0791e15.mockapi.io/api/projects/${id}`, {
         method: 'DELETE'
     })
         .then(response => response.json())
