@@ -47,3 +47,13 @@ function cadastrar() {
             window.location.href = "list.html";
         })
 }
+
+
+
+
+
+
+
+
+
+
