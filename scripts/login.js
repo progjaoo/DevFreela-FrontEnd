@@ -43,6 +43,7 @@ function cadastrar() {
 
             localStorage.setItem("userName", response.fullname);
             localStorage.setItem("role", response.role === 'dev' ? "Desenvolvedor" : "Cliente");
+            localStorage.setItem("idClient", response.id);
 
             window.location.href = "list.html";
         })
