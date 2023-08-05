@@ -8,7 +8,7 @@ window.onload = function () {
 }
 
 function GetProjects() {
-    fetch("https://64b7d58821b9aa6eb0791e15.mockapi.io/api/projects")
+    fetch("https://localhost:7014/api/projects/")
         .then(response => response.json())
         .then(response => {
             list = response;

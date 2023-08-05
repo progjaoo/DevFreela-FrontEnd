@@ -33,7 +33,7 @@ function cadastrar() {
     }
 
     // Enviando para a API utilizando MockAPI para testes...
-    fetch("https://64b7d58821b9aa6eb0791e15.mockapi.io/api/users", {
+    fetch("https://localhost:7014/api/users", {
         method: 'POST',
         body: JSON.stringify(payloadUsers), //transformando o payload em string
         headers: {
