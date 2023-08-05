@@ -15,7 +15,11 @@ function checkIfAnyRoleIsChecked() {
 function cadastrar() {
     //Checa se a role foi checked
     if (checkIfAnyRoleIsChecked() === false) {
-        alert("Marque se você é Dev ou Cliente!");
+        Swal.fire(
+            'Algo deu errado...',
+            'Para prosseguir, escolhe se você é Dev ou Cliente',
+            'error'
+        )
         return;
     }
 
@@ -39,22 +43,20 @@ function cadastrar() {
         .then(response => response.json())
         .then(response => {
 
-            alert('Login realizado com sucesso');
+            Swal.fire({
+                title: 'Parabéns!',
+                text: "Usuário cadastrado com sucesso",
+                icon: 'success',
+                confirmButtonText: 'Ok!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.setItem("userName", response.fullname);
+                    localStorage.setItem("role", response.role === 'dev' ? "Desenvolvedor" : "Cliente");
+                    localStorage.setItem("idClient", response.id);
 
-            localStorage.setItem("userName", response.fullname);
-            localStorage.setItem("role", response.role === 'dev' ? "Desenvolvedor" : "Cliente");
-            localStorage.setItem("idClient", response.id);
+                    window.location.href = "list.html";
+                }
+            })
 
-            window.location.href = "list.html";
         })
 }
-
-
-
-
-
-
-
-
-
-

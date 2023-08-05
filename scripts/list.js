@@ -5,8 +5,6 @@ window.onload = function () {
     document.querySelector("#role").innerText = localStorage.getItem("role");
 
     GetProjects();
-
-
 }
 
 function GetProjects() {
@@ -29,8 +27,19 @@ function DeleteProject(id) {
         .then(response => response.json())
         .then(response => {
             list = list.filter(project => project.id != id);
-
-            BuildTable();
+            Swal.fire({
+                title: 'Cuidado...',
+                text: "Tem certeza que deseja excluir este projeto?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    BuildTable();
+                }
+            })
         })
 }
 
